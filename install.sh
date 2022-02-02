@@ -52,8 +52,8 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
 sudo apt-get install typora -y
 
-cp -R ~/ParcaOs/Customization/Typora/notes-dark ~/.config/Typora/themes
-cp -R ~/ParcaOs/Customization/Typora/notes-dark.css ~/.config/Typora/themes
+cp -R ~/kartanus-post-install/Customization/Typora/notes-dark ~/.config/Typora/themes
+cp -R ~/kartanus-post-install/Customization/Typora/notes-dark.css ~/.config/Typora/themes
 
 # Vim
 sudo apt install vim -y
@@ -94,17 +94,17 @@ sudo apt-get install gnome-tweaks -y
 sudo apt-get install gnome-shell-extensions -y
 
 mkdir ~/.themes && mkdir ~/.icons
-mv -v ~/ParcaOs/Customization/parcatheme/ ~/.themes
-mv -v ~/ParcaOs/Customization/parcacursor/ ~/.icons
-mv -v ~/ParcaOs/Customization/McMojave-circle-red ~/.icons
-mv -v ~/ParcaOs/Customization/McMojave-circle-red-dark ~/.icons
+mv -v ~/kartanus-post-install/Customization/parcatheme/ ~/.themes
+mv -v ~/kartanus-post-install/Customization/parcacursor/ ~/.icons
+mv -v ~/kartanus-post-install/Customization/McMojave-circle-red ~/.icons
+mv -v ~/kartanus-post-install/Customization/McMojave-circle-red-dark ~/.icons
 
-sudo cp -R ~/ParcaOs/Media/bg-image1.jpg //usr/share/backgrounds/
+sudo cp -R ~/kartanus-post-install/Media/bg-image1.jpg //usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri  file:////usr/share/backgrounds/bg-image1.jpg
 
 # --------------------------------------------------// Install fonts //--------------------------------------------------
 mkdir /home/$username/.fontconfig 
-sudo cp -v ~/ParcaOs/Fonts/FantasqueSansMono/* ~/.fontconfig/
+sudo cp -v ~/kartanus-post-install/Fonts/FantasqueSansMono/* ~/.fontconfig/
 
 # --------------------------------------------------// Repair errors //--------------------------------------------------
 sudo killall snap-store
