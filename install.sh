@@ -82,8 +82,12 @@ sudo apt update -y
 # Okular (PDF)
 sudo apt-get install okular -y
 
-# Bitwarde
+# Bitwarden
 sudo snap install bitwarden
+
+# Node & Npm
+sudo apt update -y
+sudp apt install nodejs npm -y
 
 # --------------------------------------------------// Customization //--------------------------------------------------
 sudo apt-get install gnome-tweaks -y
