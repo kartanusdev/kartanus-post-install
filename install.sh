@@ -85,12 +85,13 @@ sudo apt-get install okular -y
 # Bitwarden
 sudo snap install bitwarden
 
-# Node v16 && Yarn
+# Node v16
 sudo apt update -y
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install yarn
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Yarn
+npm install --global yarn
 
 # --------------------------------------------------// Customization //--------------------------------------------------
 sudo apt-get install gnome-tweaks -y
